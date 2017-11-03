@@ -9,15 +9,10 @@ AliOS-Things 文档
 .. toctree::
    :maxdepth: 1
 
-   coding_style/index.rst
+   env/index.rst
+   app/index.rst
+   ide/index.rst
    porting/index.rst
    api/index.rst
+   coding_style/index.rst
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
