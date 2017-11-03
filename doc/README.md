@@ -1,14 +1,15 @@
 
-# How to generate html file
+# Document
 
-The document of AliOS-Thigns is written by .rst files. To generate html files, you can follow instrutions:
+This folder includes the source code, wirtten by reStructuredText format, of [AliOS-Things Document](http://alios-things-doc-test.readthedocs.io/en/latest/index.html).
+
+If you would like to build your local html files, please follow bellow instructions:
 
 ```
 $ cd doc
 $ sudo pip install -r requirement
 $ make html
 ```
-Then, the static html files are generated at `doc/_build/html/index.html`.
 
-The document is hosted on [AliOS-Things Document](http://alios-things-doc-test.readthedocs.io/en/latest/index.html).
+The generated html files are located at directory `_build/html`.
 

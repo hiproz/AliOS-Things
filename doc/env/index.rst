@@ -124,15 +124,16 @@ linux环境配置
 
 交叉工具链
 -------------------------------
-Linux 工具链可以在链接 `GCC <https://launchpad.net/gcc-arm-embedded/+download>`_ 下载 Linux 压缩包，解压缩，在 .bashrc 里面配置
- TOOLCHAIN_PATH 路径（**注意：路径最后一个下划线 / 添加到路径**）：
+
+Linux 工具链可以在链接 `GCC <https://launchpad.net/gcc-arm-embedded/+download>`_ 下载 Linux 压缩包，解压缩，在 .bashrc 里面配置 TOOLCHAIN_PATH 路径（**注意：路径最后一个下划线 / 添加到路径**）：
 
 .. image:: https://img.alicdn.com/tfs/TB1GnAGg3oQMeJjy0FpXXcTxpXa-865-413.png
 
 在 AliOS Things 源码的目录下面，运行：
 
 .. code-block:: bash
-    $ aos make helloworld@mk3060
+
+  $ aos make helloworld@mk3060
 
 编译 mk3060 板子的 helloworld 示例程序。
 
@@ -141,6 +142,7 @@ minicom串口配置
 配置串口参数（以MK3060为例），配置文件（/etc/minicom/minirc.dfl）内容 ：
 
 .. code-block:: bash
+
     pu port             /dev/ttyUSB0
     pu baudrate         921600
     pu bits             8
@@ -164,7 +166,8 @@ j-link烧写
 以 MK3060 为例，在编译的时候，带上jlink烧写参数：
 
 .. code-block:: bash
-    $aos make helloworld@mk3060 JTAG=jlink download
+
+  $aos make helloworld@mk3060 JTAG=jlink download
 
 会通过J-Link烧写固件到板子上。
 
@@ -180,13 +183,15 @@ j-link调试
 
 在一个 CMD 窗口下面启动OpenOCD：
 
- .. code-block:: bash
-    $.\build\OpenOCD\Win32\openocd -f .\\build\OpenOCD\interface\jlink.cfg -f .\\build\OpenOCD\beken\beken.cfg -f .\\build\OpenOCD\beken\beken_gdb_jtag.cfg -l out\openocd_log.txt
+.. code-block:: bash
+
+  $.\build\OpenOCD\Win32\openocd -f .\\build\OpenOCD\interface\jlink.cfg -f .\\build\OpenOCD\beken\beken.cfg -f .\\build\OpenOCD\beken\beken_gdb_jtag.cfg -l out\openocd_log.txt
 
 在另外一个 CMD 窗口，启动 gdb：
 
 .. code-block:: bash
-    $ arm-none-eabi-gdb -x=.gdbinit -ex 'target remote localhost:3333' ./out/eclipse_debug/last_built.elf --tui
+
+  $ arm-none-eabi-gdb -x=.gdbinit -ex 'target remote localhost:3333' ./out/eclipse_debug/last_built.elf --tui
 
 **Linux 调试**  
 
@@ -194,13 +199,15 @@ j-link调试
 
 在一个 Shell 窗口启动OpenOCD：
 
- .. code-block:: bash
-    $ ./build/OpenOCD/Linux64/openocd  -f  build/OpenOCD/interface/jlink.cfg -f  build/OpenOCD/beken.cfg -f  build/OpenOCD/beken_gdb_jtag.cfg -l out/openocd_log.txt
+.. code-block:: bash
+
+  $ ./build/OpenOCD/Linux64/openocd  -f  build/OpenOCD/interface/jlink.cfg -f  build/OpenOCD/beken.cfg -f  build/OpenOCD/beken_gdb_jtag.cfg -l out/openocd_log.txt
 
 在另外一个 Shell 窗口启动 gdb：
 
 .. code-block:: bash
-    $ arm-none-eabi-gdb -x=.gdbinit -ex 'target remote localhost:3333' ./out/eclipse_debug/last_built.elf --tui
+
+  $ arm-none-eabi-gdb -x=.gdbinit -ex 'target remote localhost:3333' ./out/eclipse_debug/last_built.elf --tui
 
 gdb 里面设置断点，打印堆栈信息（MK3060最大支持两个断点）。
 
