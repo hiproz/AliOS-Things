@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="soc_8h" kind="file" language="C++">
+    <compoundname>soc.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="gpio_8h" local="yes">gpio.h</includes>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+    <includes refid="flash_8h" local="yes">flash.h</includes>
+    <includes refid="i2c_8h" local="yes">i2c.h</includes>
+    <includes refid="pwm_8h" local="yes">pwm.h</includes>
+    <includes refid="rng_8h" local="yes">rng.h</includes>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+    <includes refid="uart_8h" local="yes">uart.h</includes>
+    <includes refid="wdg_8h" local="yes">wdg.h</includes>
+    <includes refid="sd_8h" local="yes">sd.h</includes>
+    <incdepgraph>
+      <node id="310">
+        <label>stdint.h</label>
+      </node>
+      <node id="312">
+        <label>gpio.h</label>
+        <link refid="gpio_8h"/>
+      </node>
+      <node id="315">
+        <label>flash.h</label>
+        <link refid="flash_8h"/>
+      </node>
+      <node id="321">
+        <label>uart.h</label>
+        <link refid="uart_8h"/>
+      </node>
+      <node id="319">
+        <label>rtc.h</label>
+        <link refid="rtc_8h"/>
+      </node>
+      <node id="314">
+        <label>adc.h</label>
+        <link refid="adc_8h"/>
+      </node>
+      <node id="311">
+        <label>stddef.h</label>
+      </node>
+      <node id="313">
+        <label>spi.h</label>
+        <link refid="spi_8h"/>
+      </node>
+      <node id="322">
+        <label>wdg.h</label>
+        <link refid="wdg_8h"/>
+      </node>
+      <node id="317">
+        <label>pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="320">
+        <label>timer.h</label>
+        <link refid="timer_8h"/>
+      </node>
+      <node id="316">
+        <label>i2c.h</label>
+        <link refid="i2c_8h"/>
+      </node>
+      <node id="309">
+        <label>/home/work/me/AliOS-Things/include/hal/soc/soc.h</label>
+        <link refid="soc.h"/>
+        <childnode refid="310" relation="include">
+        </childnode>
+        <childnode refid="311" relation="include">
+        </childnode>
+        <childnode refid="312" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
+        </childnode>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="315" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="318">
+        <label>rng.h</label>
+        <link refid="rng_8h"/>
+      </node>
+      <node id="323">
+        <label>sd.h</label>
+        <link refid="sd_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_SOC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SOC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gpio_8h" kindref="compound">gpio.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="spi_8h" kindref="compound">spi.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="adc_8h" kindref="compound">adc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="flash_8h" kindref="compound">flash.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="i2c_8h" kindref="compound">i2c.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pwm_8h" kindref="compound">pwm.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rng_8h" kindref="compound">rng.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rtc_8h" kindref="compound">rtc.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="timer_8h" kindref="compound">timer.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="uart_8h" kindref="compound">uart.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="wdg_8h" kindref="compound">wdg.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="sd_8h" kindref="compound">sd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_SOC_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/soc.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdlist__s" kind="struct" language="C++" prot="public">
+    <compoundname>dlist_s</compoundname>
+    <includes refid="list_8h" local="yes">list.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlist__s" kindref="compound">dlist_s</ref> *</type>
+        <definition>struct dlist_s* dlist_s::prev</definition>
+        <argsstring></argsstring>
+        <name>prev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/list.h" line="35" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/list.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="39" endline="46">__dlist_add</referencedby>
+        <referencedby refid="list_8h_1a7c8b4b86bc1355262e8cf9754d5e7ad6" compoundref="list_8h" startline="64" endline="67">dlist_add_tail</referencedby>
+        <referencedby refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" compoundref="list_8h" startline="69" endline="76">dlist_del</referencedby>
+        <referencedby refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" compoundref="list_8h" startline="78" endline="81">dlist_init</referencedby>
+        <referencedby refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" compoundref="list_8h" startline="83" endline="87">INIT_AOS_DLIST_HEAD</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structdlist__s" kindref="compound">dlist_s</ref> *</type>
+        <definition>struct dlist_s* dlist_s::next</definition>
+        <argsstring></argsstring>
+        <name>next</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/list.h" line="36" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/list.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="list_8h_1acfac6035fb611ca4b1653183d1a1d268" compoundref="list_8h" startline="39" endline="46">__dlist_add</referencedby>
+        <referencedby refid="list_8h_1ab5fd92793cd02313e7a6e9f78d16bd57" compoundref="list_8h" startline="59" endline="62">dlist_add</referencedby>
+        <referencedby refid="list_8h_1a44be29dcbde5e33d8b1631fd573c9263" compoundref="list_8h" startline="69" endline="76">dlist_del</referencedby>
+        <referencedby refid="list_8h_1a90536260cd9ef225666f9722ebcd6737" compoundref="list_8h" startline="89" endline="92">dlist_empty</referencedby>
+        <referencedby refid="list_8h_1afb5ee572477c0667e9c24a8103ae5703" compoundref="list_8h" startline="78" endline="81">dlist_init</referencedby>
+        <referencedby refid="list_8h_1a5516c031b59eeab86a60ed3e476eca7d" compoundref="list_8h" startline="83" endline="87">INIT_AOS_DLIST_HEAD</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="23">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="23" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/aos/list.h" line="34" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/list.h" bodystart="34" bodyend="37"/>
+    <listofallmembers>
+      <member refid="structdlist__s_1a0b7ae7507f6ad05a6dde02e964b24b9d" prot="public" virt="non-virtual"><scope>dlist_s</scope><name>next</name></member>
+      <member refid="structdlist__s_1a35235eec0fd190a9734fc2dba92ad71e" prot="public" virt="non-virtual"><scope>dlist_s</scope><name>prev</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

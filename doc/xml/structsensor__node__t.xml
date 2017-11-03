@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsensor__node__t" kind="struct" language="C++" prot="public">
+    <compoundname>sensor_node_t</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsensor__node__t_1a786838b9b1f9fe62175bca9759b9cbe4" prot="public" static="no" mutable="no">
+        <type><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref></type>
+        <definition>sensor_type sensor_node_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="16" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsensor__node__t_1a53d1f3dcc04ad216ca61df18ff7ffe9e" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* sensor_node_t::sensor_name</definition>
+        <argsstring></argsstring>
+        <name>sensor_name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="17" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="94">
+        <label>sensor_node_t</label>
+        <link refid="structsensor__node__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="15" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="15" bodyend="18"/>
+    <listofallmembers>
+      <member refid="structsensor__node__t_1a53d1f3dcc04ad216ca61df18ff7ffe9e" prot="public" virt="non-virtual"><scope>sensor_node_t</scope><name>sensor_name</name></member>
+      <member refid="structsensor__node__t_1a786838b9b1f9fe62175bca9759b9cbe4" prot="public" virt="non-virtual"><scope>sensor_node_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

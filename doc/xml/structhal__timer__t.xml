@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhal__timer__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_timer_t</compoundname>
+    <includes refid="timer_8h" local="yes">timer.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__timer__t_1a3bdc80942908e6fe67cda75ee3ceeee4" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t hal_timer_t::ch</definition>
+        <argsstring></argsstring>
+        <name>ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="11" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__timer__t_1aebf8a6a4178011f1437eb4d0214babea" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* hal_timer_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="12" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__timer__t_1ac57f7ae827c1f750f6f742aa3bd695d0" prot="public" static="no" mutable="no">
+        <type><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref></type>
+        <definition>hal_timer_cb_t hal_timer_t::cb</definition>
+        <argsstring></argsstring>
+        <name>cb</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="13" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__timer__t_1a116e8fc78bc129c685bb0b0b2b4ec387" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* hal_timer_t::arg</definition>
+        <argsstring></argsstring>
+        <name>arg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="14" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="42">
+        <label>hal_timer_t</label>
+        <link refid="structhal__timer__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="10" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="10" bodyend="15"/>
+    <listofallmembers>
+      <member refid="structhal__timer__t_1a116e8fc78bc129c685bb0b0b2b4ec387" prot="public" virt="non-virtual"><scope>hal_timer_t</scope><name>arg</name></member>
+      <member refid="structhal__timer__t_1ac57f7ae827c1f750f6f742aa3bd695d0" prot="public" virt="non-virtual"><scope>hal_timer_t</scope><name>cb</name></member>
+      <member refid="structhal__timer__t_1a3bdc80942908e6fe67cda75ee3ceeee4" prot="public" virt="non-virtual"><scope>hal_timer_t</scope><name>ch</name></member>
+      <member refid="structhal__timer__t_1aebf8a6a4178011f1437eb4d0214babea" prot="public" virt="non-virtual"><scope>hal_timer_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

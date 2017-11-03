@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="timer_8h" kind="file" language="C++">
+    <compoundname>timer.h</compoundname>
+    <includedby refid="hal_8h" local="no">/home/work/me/AliOS-Things/include/hal/hal.h</includedby>
+    <includedby refid="soc_8h" local="yes">/home/work/me/AliOS-Things/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="330">
+        <label>/home/work/me/AliOS-Things/include/hal/soc/timer.h</label>
+        <link refid="timer.h"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="332" relation="include">
+        </childnode>
+      </node>
+      <node id="332">
+        <label>/home/work/me/AliOS-Things/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+      </node>
+      <node id="331">
+        <label>/home/work/me/AliOS-Things/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structhal__timer__t" prot="public">hal_timer_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* hal_timer_cb_t) (void *arg)</definition>
+        <argsstring>)(void *arg)</argsstring>
+        <name>hal_timer_cb_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="8" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/timer.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="timer_8h_1a1a01785016b4d418c3d2628a3cbfdb9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_timer_init</definition>
+        <argsstring>(hal_timer_t *tmr, unsigned int period, unsigned char auto_reload, unsigned char ch, hal_timer_cb_t cb, void *arg)</argsstring>
+        <name>hal_timer_init</name>
+        <param>
+          <type><ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref> *</type>
+          <declname>tmr</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>period</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>auto_reload</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>ch</declname>
+        </param>
+        <param>
+          <type><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref></type>
+          <declname>cb</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init a hardware timer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tmr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer struct </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">period</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>micro seconds for repeat timer trigger </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">auto_reoad</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set to 0, if you just need oneshot timer </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to be triggered after useconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">ch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer channel </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed to cb </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="timer_8h_1a9403a0f2305d71b5c273a75b101d741f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_timer_start</definition>
+        <argsstring>(hal_timer_t *tmr)</argsstring>
+        <name>hal_timer_start</name>
+        <param>
+          <type><ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref> *</type>
+          <declname>tmr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>init a hardware timer</para><para><simplesect kind="return"><para>0 == success, EIO == failure </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="timer_8h_1ad1a680cfce89b4d45e5256182159ac8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_timer_stop</definition>
+        <argsstring>(hal_timer_t *tmr)</argsstring>
+        <name>hal_timer_stop</name>
+        <param>
+          <type><ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref> *</type>
+          <declname>tmr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stop a hardware timer</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">tmr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timer struct </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">cb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>callback to be triggered after useconds </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">arg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>passed to cb </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h" line="45" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_TIMER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void<sp/>(*<ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="structhal__timer__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11" refid="structhal__timer__t_1a3bdc80942908e6fe67cda75ee3ceeee4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structhal__timer__t_1a3bdc80942908e6fe67cda75ee3ceeee4" kindref="member">ch</ref>;</highlight></codeline>
+<codeline lineno="12" refid="structhal__timer__t_1aebf8a6a4178011f1437eb4d0214babea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structhal__timer__t_1aebf8a6a4178011f1437eb4d0214babea" kindref="member">priv</ref>;</highlight></codeline>
+<codeline lineno="13" refid="structhal__timer__t_1ac57f7ae827c1f750f6f742aa3bd695d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref><sp/><ref refid="structhal__timer__t_1ac57f7ae827c1f750f6f742aa3bd695d0" kindref="member">cb</ref>;</highlight></codeline>
+<codeline lineno="14" refid="structhal__timer__t_1a116e8fc78bc129c685bb0b0b2b4ec387" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structhal__timer__t_1a116e8fc78bc129c685bb0b0b2b4ec387" kindref="member">arg</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}<sp/><ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref>;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8h_1a1a01785016b4d418c3d2628a3cbfdb9e" kindref="member">hal_timer_init</ref>(<ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref><sp/>*tmr,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>period,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>auto_reload,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>ch,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="timer_8h_1a9b138d5db3c7e07032743eddcadc5f4c" kindref="member">hal_timer_cb_t</ref><sp/>cb,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*arg);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">int32_t<sp/><ref refid="timer_8h_1a9403a0f2305d71b5c273a75b101d741f" kindref="member">hal_timer_start</ref>(<ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref><sp/>*tmr);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="timer_8h_1ad1a680cfce89b4d45e5256182159ac8d" kindref="member">hal_timer_stop</ref>(<ref refid="structhal__timer__t" kindref="compound">hal_timer_t</ref><sp/>*tmr);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_TIMER_H*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/timer.h"/>
+  </compounddef>
+</doxygen>

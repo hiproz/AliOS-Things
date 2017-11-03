@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhal__wifi__scan__result__adv__t" kind="struct" language="C++" prot="public">
+    <compoundname>hal_wifi_scan_result_adv_t</compoundname>
+    <includes refid="wifi_8h" local="yes">wifi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1a83cdf51a8e04deccdeae9ed2dabd6f63" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_adv_t::ap_num</definition>
+        <argsstring></argsstring>
+        <name>ap_num</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="41" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1adeced914f0ee19fafbd8d9f260556726" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_adv_t::ssid[32]</definition>
+        <argsstring>[32]</argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="43" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1a4b1dffaf9e6afb9feb77bb9610e50ec5" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_adv_t::ap_power</definition>
+        <argsstring></argsstring>
+        <name>ap_power</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="44" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1ac688d9e732122225e921de83e5885247" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_adv_t::bssid[6]</definition>
+        <argsstring>[6]</argsstring>
+        <name>bssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="45" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1a2a9883afbd7a620803b439277a9015fb" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char hal_wifi_scan_result_adv_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="46" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1a73b0abdc3e03a036fe5851f7c05ea926" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t hal_wifi_scan_result_adv_t::security</definition>
+        <argsstring></argsstring>
+        <name>security</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="47" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__wifi__scan__result__adv__t_1a5fc4fecf7eda60857aa55046d67dc1d4" prot="public" static="no" mutable="no">
+        <type>struct hal_wifi_scan_result_adv_t::@3 *</type>
+        <definition>struct hal_wifi_scan_result_adv_t::@3 * hal_wifi_scan_result_adv_t::ap_list</definition>
+        <argsstring></argsstring>
+        <name>ap_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="64">
+        <label>hal_wifi_scan_result_adv_t</label>
+        <link refid="structhal__wifi__scan__result__adv__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/wifi.h" line="40" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/wifi.h" bodystart="40" bodyend="49"/>
+    <listofallmembers>
+      <member refid="structhal__wifi__scan__result__adv__t_1a5fc4fecf7eda60857aa55046d67dc1d4" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>ap_list</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1a83cdf51a8e04deccdeae9ed2dabd6f63" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>ap_num</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1a4b1dffaf9e6afb9feb77bb9610e50ec5" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>ap_power</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1ac688d9e732122225e921de83e5885247" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>bssid</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1a2a9883afbd7a620803b439277a9015fb" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>channel</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1a73b0abdc3e03a036fe5851f7c05ea926" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>security</name></member>
+      <member refid="structhal__wifi__scan__result__adv__t_1adeced914f0ee19fafbd8d9f260556726" prot="public" virt="non-virtual"><scope>hal_wifi_scan_result_adv_t</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

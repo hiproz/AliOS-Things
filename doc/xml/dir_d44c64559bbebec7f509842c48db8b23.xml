@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>/home/work/me/AliOS-Things/include</compoundname>
+    <innerdir refid="dir_100444dbbb64492ab2f8c2b1d8fa817c">/home/work/me/AliOS-Things/include/aos</innerdir>
+    <innerdir refid="dir_a413b7f902cba5167b433a6fe834d5bd">/home/work/me/AliOS-Things/include/hal</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/work/me/AliOS-Things/include/"/>
+  </compounddef>
+</doxygen>

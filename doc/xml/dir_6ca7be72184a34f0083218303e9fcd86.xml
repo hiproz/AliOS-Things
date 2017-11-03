@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_6ca7be72184a34f0083218303e9fcd86" kind="dir">
+    <compoundname>/home/work/me/AliOS-Things/include/hal/soc</compoundname>
+    <innerfile refid="adc_8h">adc.h</innerfile>
+    <innerfile refid="flash_8h">flash.h</innerfile>
+    <innerfile refid="gpio_8h">gpio.h</innerfile>
+    <innerfile refid="i2c_8h">i2c.h</innerfile>
+    <innerfile refid="pwm_8h">pwm.h</innerfile>
+    <innerfile refid="rng_8h">rng.h</innerfile>
+    <innerfile refid="rtc_8h">rtc.h</innerfile>
+    <innerfile refid="sd_8h">sd.h</innerfile>
+    <innerfile refid="soc_8h">soc.h</innerfile>
+    <innerfile refid="spi_8h">spi.h</innerfile>
+    <innerfile refid="timer_8h">timer.h</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <innerfile refid="wdg_8h">wdg.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/"/>
+  </compounddef>
+</doxygen>

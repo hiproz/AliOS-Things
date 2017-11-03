@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="sensor_8h" kind="file" language="C++">
+    <compoundname>sensor.h</compoundname>
+    <includedby refid="hal_8h" local="no">/home/work/me/AliOS-Things/include/hal/hal.h</includedby>
+    <invincdepgraph>
+      <node id="276">
+        <label>/home/work/me/AliOS-Things/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+      <node id="275">
+        <label>/home/work/me/AliOS-Things/include/hal/sensor.h</label>
+        <link refid="sensor.h"/>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structsensor__node__t" prot="public">sensor_node_t</innerclass>
+    <innerclass refid="structhal__sensor__module__s" prot="public">hal_sensor_module_s</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="sensor_8h_1afb4ae0506fc7cd6743247dae31528d46" prot="public" static="no">
+        <name>SENSOR_TYPE_TEMPERATURE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="9" column="9" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" prot="public" static="no">
+        <type>struct <ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_s</ref></type>
+        <definition>typedef struct hal_sensor_module_s hal_sensor_module_t</definition>
+        <argsstring></argsstring>
+        <name>hal_sensor_module_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="62" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="sensor_8h_1afa273d6585462db941727d44e9b50320" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int sensor_type</definition>
+        <argsstring></argsstring>
+        <name>sensor_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="13" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="sensor_8h_1a4d45c191e22cbddcc7f2d8cd2f3fbe8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void hal_sensor_register_module</definition>
+        <argsstring>(hal_sensor_module_t *module)</argsstring>
+        <name>hal_sensor_register_module</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>module</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Arch register a new module before HAL startup </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1ad8e5e6bc01cf056fd3c26c9126b4505e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_sensor_init</definition>
+        <argsstring>(void)</argsstring>
+        <name>hal_sensor_init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>HAL sensor init.</para><para><simplesect kind="return"><para>0 if init success, -1 if fail </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="41" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1a38795c14d032c998f64e13e8da0ab541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_sensor_get_sensor_list</definition>
+        <argsstring>(hal_sensor_module_t *m, sensor_node_t const **list)</argsstring>
+        <name>hal_sensor_get_sensor_list</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="structsensor__node__t" kindref="compound">sensor_node_t</ref> const **</type>
+          <declname>list</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enbale sensor with type</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refer the sensor module which will be used,default module will be used if value is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">list</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The list of the sensor which will be return</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>negative value indicates an error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1a2d7da10d08b399eab3d150bc03d0c15d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_sensor_enable</definition>
+        <argsstring>(hal_sensor_module_t *m, sensor_type type)</argsstring>
+        <name>hal_sensor_enable</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>enable sensor with type</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refer the sensor module which will be used,default module will be used if value is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the sensor which must be supplied</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if enable ok, negative value indicates an error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1af70ead5d0558ffc2fd1ec80b9e267d3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_sensor_disable</definition>
+        <argsstring>(hal_sensor_module_t *m, sensor_type type)</argsstring>
+        <name>hal_sensor_disable</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>disable sensor with type</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refer the sensor module which will be used,default module will be used if value is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the sensor which must be supplied</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if disable ok, negative value indicates an error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1a15f8ee6beb053bf33fa77b96113363d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int hal_sensor_read</definition>
+        <argsstring>(hal_sensor_module_t *m, sensor_type type, char *buf, int buf_size)</argsstring>
+        <name>hal_sensor_read</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref></type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buf_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read sensor data when enable sensor</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Refer the sensor module which will be used,default module will be used if value is NULL </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">type</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the sensor which must be supplied </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>receive buf for sensor data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">buf_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the size buf of input</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 if read ok, negative value indicates an error </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="83" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1a5126efa2c800aa8d900fc2775ff971ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+        <definition>hal_sensor_module_t* hal_sensor_get_default_module</definition>
+        <argsstring>(void)</argsstring>
+        <name>hal_sensor_get_default_module</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the default sensor module</para><para><simplesect kind="return"><para>return the first registered sensor module ,which is the head of module list </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="sensor_8h_1a94e69d6b8eeca793904cde6b9fa45ae0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+        <definition>hal_sensor_module_t* hal_sensor_get_next_module</definition>
+        <argsstring>(hal_sensor_module_t *m)</argsstring>
+        <name>hal_sensor_get_next_module</name>
+        <param>
+          <type><ref refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" kindref="member">hal_sensor_module_t</ref> *</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the next sensor HAL The system may have more than 1 sensor HAL instances.</para><para><simplesect kind="return"><para>Instance pointer or NULL </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="98" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_SENSOR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="sensor_8h_1afb4ae0506fc7cd6743247dae31528d46" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SENSOR_TYPE_TEMPERATURE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="sensor_8h_1abd00ba6504caa64728ba1f70aed57ad4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_s</ref><sp/><ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="sensor_8h_1afa273d6585462db941727d44e9b50320" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structsensor__node__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16" refid="structsensor__node__t_1a786838b9b1f9fe62175bca9759b9cbe4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/><ref refid="structsensor__node__t_1a786838b9b1f9fe62175bca9759b9cbe4" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="17" refid="structsensor__node__t_1a53d1f3dcc04ad216ca61df18ff7ffe9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structsensor__node__t_1a53d1f3dcc04ad216ca61df18ff7ffe9e" kindref="member">sensor_name</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}<sp/><ref refid="structsensor__node__t" kindref="compound">sensor_node_t</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structhal__sensor__module__s" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_s</ref><sp/>{</highlight></codeline>
+<codeline lineno="21" refid="structhal__sensor__module__s_1ab9e477357fa58652c1e4885bbb291058" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref><sp/><ref refid="structhal__sensor__module__s_1ab9e477357fa58652c1e4885bbb291058" kindref="member">base</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>Link<sp/>to<sp/>HW<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structhal__sensor__module__s_1a754c92c4c0954643ac00d11f879d614c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structhal__sensor__module__s_1a754c92c4c0954643ac00d11f879d614c" kindref="member">init</ref>)(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*something);</highlight></codeline>
+<codeline lineno="25" refid="structhal__sensor__module__s_1a6c532c0c2d9c280cbf746c19566fa877" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structhal__sensor__module__s_1a6c532c0c2d9c280cbf746c19566fa877" kindref="member">get_sensor_list</ref>)(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="structsensor__node__t" kindref="compound">sensor_node_t</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>**list);</highlight></codeline>
+<codeline lineno="26" refid="structhal__sensor__module__s_1a051992b20bc84fc795d6618b6318b037" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structhal__sensor__module__s_1a051992b20bc84fc795d6618b6318b037" kindref="member">enable</ref>)(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type);</highlight></codeline>
+<codeline lineno="27" refid="structhal__sensor__module__s_1a0b24509491252cb5543f9e0a763f0f1c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structhal__sensor__module__s_1a0b24509491252cb5543f9e0a763f0f1c" kindref="member">disable</ref>)(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type);</highlight></codeline>
+<codeline lineno="28" refid="structhal__sensor__module__s_1a2fb74b2828a0a2bbea993c4604d163e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int<sp/>(*<ref refid="structhal__sensor__module__s_1a2fb74b2828a0a2bbea993c4604d163e9" kindref="member">read</ref>)(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_size);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="sensor_8h_1a4d45c191e22cbddcc7f2d8cd2f3fbe8a" kindref="member">hal_sensor_register_module</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*module);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sensor_8h_1ad8e5e6bc01cf056fd3c26c9126b4505e" kindref="member">hal_sensor_init</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="sensor_8h_1a38795c14d032c998f64e13e8da0ab541" kindref="member">hal_sensor_get_sensor_list</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="structsensor__node__t" kindref="compound">sensor_node_t</ref><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>**list);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="sensor_8h_1a2d7da10d08b399eab3d150bc03d0c15d" kindref="member">hal_sensor_enable</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sensor_8h_1af70ead5d0558ffc2fd1ec80b9e267d3c" kindref="member">hal_sensor_disable</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="sensor_8h_1a15f8ee6beb053bf33fa77b96113363d2" kindref="member">hal_sensor_read</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m,<sp/><ref refid="sensor_8h_1afa273d6585462db941727d44e9b50320" kindref="member">sensor_type</ref><sp/>type,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>buf_size);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*<ref refid="sensor_8h_1a5126efa2c800aa8d900fc2775ff971ca" kindref="member">hal_sensor_get_default_module</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*<ref refid="sensor_8h_1a94e69d6b8eeca793904cde6b9fa45ae0" kindref="member">hal_sensor_get_next_module</ref>(<ref refid="structhal__sensor__module__s" kindref="compound">hal_sensor_module_t</ref><sp/>*m);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_SENSOR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/work/me/AliOS-Things/include/hal/sensor.h"/>
+  </compounddef>
+</doxygen>

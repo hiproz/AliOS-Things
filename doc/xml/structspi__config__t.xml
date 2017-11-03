@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structspi__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>spi_config_t</compoundname>
+    <includes refid="spi_8h" local="yes">spi.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t spi_config_t::mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/spi.h" line="9" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/spi.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t spi_config_t::freq</definition>
+        <argsstring></argsstring>
+        <name>freq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/spi.h" line="10" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/spi.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="98">
+        <label>spi_config_t</label>
+        <link refid="structspi__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/spi.h" line="8" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/spi.h" bodystart="8" bodyend="11"/>
+    <listofallmembers>
+      <member refid="structspi__config__t_1af8b4b9033931adeaf0aec27eb38ce393" prot="public" virt="non-virtual"><scope>spi_config_t</scope><name>freq</name></member>
+      <member refid="structspi__config__t_1a10afede6b824e2e9e01c2d0b1819aa23" prot="public" virt="non-virtual"><scope>spi_config_t</scope><name>mode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

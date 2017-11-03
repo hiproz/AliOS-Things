@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structadc__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>adc_config_t</compoundname>
+    <includes refid="adc_8h" local="yes">adc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structadc__config__t_1ac5c9b2b7036d07a1c39ca25d8c9b061d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t adc_config_t::sampling_cycle</definition>
+        <argsstring></argsstring>
+        <name>sampling_cycle</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/adc.h" line="9" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/adc.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>adc_config_t</label>
+        <link refid="structadc__config__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/adc.h" line="8" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/adc.h" bodystart="8" bodyend="10"/>
+    <listofallmembers>
+      <member refid="structadc__config__t_1ac5c9b2b7036d07a1c39ca25d8c9b061d" prot="public" virt="non-virtual"><scope>adc_config_t</scope><name>sampling_cycle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

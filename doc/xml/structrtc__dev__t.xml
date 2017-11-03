@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structrtc__dev__t" kind="struct" language="C++" prot="public">
+    <compoundname>rtc_dev_t</compoundname>
+    <includes refid="rtc_8h" local="yes">rtc.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t rtc_dev_t::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" line="22" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* rtc_dev_t::priv</definition>
+        <argsstring></argsstring>
+        <name>priv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" line="23" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="85">
+        <label>rtc_dev_t</label>
+        <link refid="structrtc__dev__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" line="21" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/soc/rtc.h" bodystart="21" bodyend="24"/>
+    <listofallmembers>
+      <member refid="structrtc__dev__t_1aaa13aec880a85a91144588e95e2b91cf" prot="public" virt="non-virtual"><scope>rtc_dev_t</scope><name>port</name></member>
+      <member refid="structrtc__dev__t_1ae3aa18ad032ecd8b4d7fd0f1a08de487" prot="public" virt="non-virtual"><scope>rtc_dev_t</scope><name>priv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

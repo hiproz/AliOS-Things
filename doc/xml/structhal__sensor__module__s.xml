@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structhal__sensor__module__s" kind="struct" language="C++" prot="public">
+    <compoundname>hal_sensor_module_s</compoundname>
+    <includes refid="sensor_8h" local="yes">sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structhal__sensor__module__s_1ab9e477357fa58652c1e4885bbb291058" prot="public" static="no" mutable="no">
+        <type><ref refid="structhal__module__base__t" kindref="compound">hal_module_base_t</ref></type>
+        <definition>hal_module_base_t hal_sensor_module_s::base</definition>
+        <argsstring></argsstring>
+        <name>base</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="21" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sensor__module__s_1a754c92c4c0954643ac00d11f879d614c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_sensor_module_s::init) (hal_sensor_module_t *m, void *something)</definition>
+        <argsstring>)(hal_sensor_module_t *m, void *something)</argsstring>
+        <name>init</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="24" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sensor__module__s_1a6c532c0c2d9c280cbf746c19566fa877" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_sensor_module_s::get_sensor_list) (hal_sensor_module_t *m, sensor_node_t const **list)</definition>
+        <argsstring>)(hal_sensor_module_t *m, sensor_node_t const **list)</argsstring>
+        <name>get_sensor_list</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="25" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sensor__module__s_1a051992b20bc84fc795d6618b6318b037" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_sensor_module_s::enable) (hal_sensor_module_t *m, sensor_type type)</definition>
+        <argsstring>)(hal_sensor_module_t *m, sensor_type type)</argsstring>
+        <name>enable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="26" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sensor__module__s_1a0b24509491252cb5543f9e0a763f0f1c" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_sensor_module_s::disable) (hal_sensor_module_t *m, sensor_type type)</definition>
+        <argsstring>)(hal_sensor_module_t *m, sensor_type type)</argsstring>
+        <name>disable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="27" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structhal__sensor__module__s_1a2fb74b2828a0a2bbea993c4604d163e9" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* hal_sensor_module_s::read) (hal_sensor_module_t *m, sensor_type type, char *buf, int buf_size)</definition>
+        <argsstring>)(hal_sensor_module_t *m, sensor_type type, char *buf, int buf_size)</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="28" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="40">
+        <label>dlist_s</label>
+        <link refid="structdlist__s"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>+prev</edgelabel>
+          <edgelabel>+next</edgelabel>
+        </childnode>
+      </node>
+      <node id="39">
+        <label>hal_module_base_t</label>
+        <link refid="structhal__module__base__t"/>
+        <childnode refid="40" relation="usage">
+          <edgelabel>+list</edgelabel>
+        </childnode>
+      </node>
+      <node id="38">
+        <label>hal_sensor_module_s</label>
+        <link refid="structhal__sensor__module__s"/>
+        <childnode refid="39" relation="usage">
+          <edgelabel>+base</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/hal/sensor.h" line="20" column="1" bodyfile="/home/work/me/AliOS-Things/include/hal/sensor.h" bodystart="20" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structhal__sensor__module__s_1ab9e477357fa58652c1e4885bbb291058" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>base</name></member>
+      <member refid="structhal__sensor__module__s_1a0b24509491252cb5543f9e0a763f0f1c" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>disable</name></member>
+      <member refid="structhal__sensor__module__s_1a051992b20bc84fc795d6618b6318b037" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>enable</name></member>
+      <member refid="structhal__sensor__module__s_1a6c532c0c2d9c280cbf746c19566fa877" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>get_sensor_list</name></member>
+      <member refid="structhal__sensor__module__s_1a754c92c4c0954643ac00d11f879d614c" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>init</name></member>
+      <member refid="structhal__sensor__module__s_1a2fb74b2828a0a2bbea993c4604d163e9" prot="public" virt="non-virtual"><scope>hal_sensor_module_s</scope><name>read</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

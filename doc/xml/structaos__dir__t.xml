@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structaos__dir__t" kind="struct" language="C++" prot="public">
+    <compoundname>aos_dir_t</compoundname>
+    <includes refid="vfs_8h" local="yes">vfs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int aos_dir_t::dd_vfs_fd</definition>
+        <argsstring></argsstring>
+        <name>dd_vfs_fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/vfs.h" line="21" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/vfs.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int aos_dir_t::dd_rsv</definition>
+        <argsstring></argsstring>
+        <name>dd_rsv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/vfs.h" line="22" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/vfs.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="6">
+        <label>aos_dir_t</label>
+        <link refid="structaos__dir__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/aos/vfs.h" line="20" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/vfs.h" bodystart="20" bodyend="23"/>
+    <listofallmembers>
+      <member refid="structaos__dir__t_1a7ef5d0af21144f997372f1928fd999ec" prot="public" virt="non-virtual"><scope>aos_dir_t</scope><name>dd_rsv</name></member>
+      <member refid="structaos__dir__t_1acc32cb2c98e7ca1e018a45e6f114dc80" prot="public" virt="non-virtual"><scope>aos_dir_t</scope><name>dd_vfs_fd</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

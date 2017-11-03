@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structaos__hdl__t" kind="struct" language="C++" prot="public">
+    <compoundname>aos_hdl_t</compoundname>
+    <includes refid="kernel_8h" local="yes">kernel.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* aos_hdl_t::hdl</definition>
+        <argsstring></argsstring>
+        <name>hdl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/kernel.h" line="18" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/kernel.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="10">
+        <label>aos_hdl_t</label>
+        <link refid="structaos__hdl__t"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/aos/kernel.h" line="17" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/kernel.h" bodystart="17" bodyend="19"/>
+    <listofallmembers>
+      <member refid="structaos__hdl__t_1aeb48605dca77e2ab6c6571a9b251fad9" prot="public" virt="non-virtual"><scope>aos_hdl_t</scope><name>hdl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,573 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="i2c_8h" kind="file" language="C++">
+    <compoundname>i2c.h</compoundname>
+    <includedby refid="hal_8h" local="no">/home/work/me/AliOS-Things/include/hal/hal.h</includedby>
+    <includedby refid="soc_8h" local="yes">/home/work/me/AliOS-Things/include/hal/soc/soc.h</includedby>
+    <invincdepgraph>
+      <node id="290">
+        <label>/home/work/me/AliOS-Things/include/hal/soc/i2c.h</label>
+        <link refid="i2c.h"/>
+        <childnode refid="291" relation="include">
+        </childnode>
+        <childnode refid="292" relation="include">
+        </childnode>
+      </node>
+      <node id="292">
+        <label>/home/work/me/AliOS-Things/include/hal/soc/soc.h</label>
+        <link refid="soc_8h"/>
+      </node>
+      <node id="291">
+        <label>/home/work/me/AliOS-Things/include/hal/hal.h</label>
+        <link refid="hal_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structi2c__config__t" prot="public">i2c_config_t</innerclass>
+    <innerclass refid="structi2c__dev__t" prot="public">i2c_dev_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="i2c_8h_1a4ab0930e597f8c6356f1c3df72e5f542" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_init</definition>
+        <argsstring>(i2c_dev_t *i2c)</argsstring>
+        <name>hal_i2c_init</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialises an I2C interface Prepares an I2C hardware interface for communication as a master or slave</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the device for which the i2c port should be initialised</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1ae17c7459872ec0d1d32ecd9bee53a488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_master_send</definition>
+        <argsstring>(i2c_dev_t *i2c, uint16_t dev_addr, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2c_master_send</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dev_addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c master send</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a68e2d241b51e4b1850746ca7d6ff64e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_master_recv</definition>
+        <argsstring>(i2c_dev_t *i2c, uint16_t dev_addr, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2c_master_recv</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dev_addr</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c master recv</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c receive data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c receive data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a373a4789903405c6c175f98bd3bb1433" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2C_slave_send</definition>
+        <argsstring>(i2c_dev_t *i2c, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2C_slave_send</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c slave send</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c slave send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c slave send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1ae0e628510faec1a53f895293f7708141" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_slave_recv</definition>
+        <argsstring>(i2c_dev_t *i2c, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2c_slave_recv</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c slave receive</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>tthe i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c slave receive data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c slave receive data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1aef74611174cc14fda761d39b544a0ecd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_mem_write</definition>
+        <argsstring>(i2c_dev_t *i2c, uint16_t dev_addr, uint16_t mem_addr, uint16_t mem_addr_size, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2c_mem_write</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dev_addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mem_addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mem_addr_size</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c mem write</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mem_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mem address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mem_addr_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mem address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c master send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c master send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="94" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1af4cb082a770305a10c3f73471a2505b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_mem_read</definition>
+        <argsstring>(i2c_dev_t *i2c, uint16_t dev_addr, uint16_t mem_addr, uint16_t mem_addr_size, uint8_t *data, uint16_t size, uint32_t timeout)</argsstring>
+        <name>hal_i2c_mem_read</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>dev_addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mem_addr</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>mem_addr_size</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>timeout</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>I2c master mem read</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">dev_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>device address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mem_addr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mem address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">mem_addr_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>mem address </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c master send data </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>i2c master send data size </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">timeout</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>timeout in ms</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during initialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="i2c_8h_1a569cc76c576b14ee6f501dfe8982936a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t hal_i2c_finalize</definition>
+        <argsstring>(i2c_dev_t *i2c)</argsstring>
+        <name>hal_i2c_finalize</name>
+        <param>
+          <type><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref> *</type>
+          <declname>i2c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Deinitialises an I2C device</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">i2c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>the i2c device</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>0 : on success, EIO : if an error occurred during deinitialisation </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h" line="122" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_I2C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_I2C_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="structi2c__config__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="structi2c__config__t_1a300d22552103a7ccb58a12883b44067e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structi2c__config__t_1a300d22552103a7ccb58a12883b44067e" kindref="member">address_width</ref>;</highlight></codeline>
+<codeline lineno="10" refid="structi2c__config__t_1a3cb91c4f0c325721cd3cf0acc1b4d575" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structi2c__config__t_1a3cb91c4f0c325721cd3cf0acc1b4d575" kindref="member">freq</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}<sp/><ref refid="structi2c__config__t" kindref="compound">i2c_config_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structi2c__dev__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14" refid="structi2c__dev__t_1a8ea766372206febb8e623038230e5378" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structi2c__dev__t_1a8ea766372206febb8e623038230e5378" kindref="member">port</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>i2c<sp/>port<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structi2c__dev__t_1a3dd4ad17f35b9b776ae009737da2197b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structi2c__config__t" kindref="compound">i2c_config_t</ref><sp/><ref refid="structi2c__dev__t_1a3dd4ad17f35b9b776ae009737da2197b" kindref="member">config</ref>;<sp/><sp/></highlight><highlight class="comment">/*<sp/>i2c<sp/>config<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structi2c__dev__t_1a877bc4790eb196369a210f7a27c1bb1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<ref refid="structi2c__dev__t_1a877bc4790eb196369a210f7a27c1bb1e" kindref="member">priv</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>priv<sp/>data<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}<sp/><ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1a4ab0930e597f8c6356f1c3df72e5f542" kindref="member">hal_i2c_init</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1ae17c7459872ec0d1d32ecd9bee53a488" kindref="member">hal_i2c_master_send</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint16_t<sp/>dev_addr,<sp/>uint8_t<sp/>*data,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1a68e2d241b51e4b1850746ca7d6ff64e3" kindref="member">hal_i2c_master_recv</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint16_t<sp/>dev_addr,<sp/>uint8_t<sp/>*data,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1a373a4789903405c6c175f98bd3bb1433" kindref="member">hal_i2C_slave_send</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1ae0e628510faec1a53f895293f7708141" kindref="member">hal_i2c_slave_recv</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,<sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1aef74611174cc14fda761d39b544a0ecd" kindref="member">hal_i2c_mem_write</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint16_t<sp/>dev_addr,<sp/>uint16_t<sp/>mem_addr,</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>mem_addr_size,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1af4cb082a770305a10c3f73471a2505b5" kindref="member">hal_i2c_mem_read</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c,<sp/>uint16_t<sp/>dev_addr,<sp/>uint16_t<sp/>mem_addr,</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>mem_addr_size,<sp/>uint8_t<sp/>*data,<sp/>uint16_t<sp/>size,</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint32_t<sp/>timeout);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal">int32_t<sp/><ref refid="i2c_8h_1a569cc76c576b14ee6f501dfe8982936a" kindref="member">hal_i2c_finalize</ref>(<ref refid="structi2c__dev__t" kindref="compound">i2c_dev_t</ref><sp/>*i2c);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_I2C_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/work/me/AliOS-Things/include/hal/soc/i2c.h"/>
+  </compounddef>
+</doxygen>

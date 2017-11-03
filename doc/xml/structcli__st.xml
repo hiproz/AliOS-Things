@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcli__st" kind="struct" language="C++" prot="public">
+    <compoundname>cli_st</compoundname>
+    <includes refid="cli_8h" local="yes">cli.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcli__st_1aa165bb8d705f8162fdef9caf248e9d24" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cli_st::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="25" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1a358ff9f628880448c1dcfefa7fe124a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cli_st::echo_disabled</definition>
+        <argsstring></argsstring>
+        <name>echo_disabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="26" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1ae6267c542eb3ea592f7b84cc3963acce" prot="public" static="no" mutable="no">
+        <type>const struct <ref refid="structcli__command" kindref="compound">cli_command</ref> *</type>
+        <definition>const struct cli_command* cli_st::commands[MAX_COMMANDS]</definition>
+        <argsstring>[MAX_COMMANDS]</argsstring>
+        <name>commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="28" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1a2720d0c5493080bb0de32a08980aa3be" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cli_st::num_commands</definition>
+        <argsstring></argsstring>
+        <name>num_commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="30" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1a18ec0d6b894c3ca6f69f18ba72193b2d" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int cli_st::bp</definition>
+        <argsstring></argsstring>
+        <name>bp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="31" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1a96b76565516c442eb570f6a0c5f458a0" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char cli_st::inbuf[INBUF_SIZE]</definition>
+        <argsstring>[INBUF_SIZE]</argsstring>
+        <name>inbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="33" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcli__st_1a8cddb6553f21346e722581d363532314" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char cli_st::outbuf[OUTBUF_SIZE]</definition>
+        <argsstring>[OUTBUF_SIZE]</argsstring>
+        <name>outbuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="34" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>cli_st</label>
+        <link refid="structcli__st"/>
+        <childnode refid="21" relation="usage">
+          <edgelabel>+commands</edgelabel>
+        </childnode>
+      </node>
+      <node id="21">
+        <label>cli_command</label>
+        <link refid="structcli__command"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/work/me/AliOS-Things/include/aos/cli.h" line="24" column="1" bodyfile="/home/work/me/AliOS-Things/include/aos/cli.h" bodystart="24" bodyend="35"/>
+    <listofallmembers>
+      <member refid="structcli__st_1a18ec0d6b894c3ca6f69f18ba72193b2d" prot="public" virt="non-virtual"><scope>cli_st</scope><name>bp</name></member>
+      <member refid="structcli__st_1ae6267c542eb3ea592f7b84cc3963acce" prot="public" virt="non-virtual"><scope>cli_st</scope><name>commands</name></member>
+      <member refid="structcli__st_1a358ff9f628880448c1dcfefa7fe124a7" prot="public" virt="non-virtual"><scope>cli_st</scope><name>echo_disabled</name></member>
+      <member refid="structcli__st_1a96b76565516c442eb570f6a0c5f458a0" prot="public" virt="non-virtual"><scope>cli_st</scope><name>inbuf</name></member>
+      <member refid="structcli__st_1aa165bb8d705f8162fdef9caf248e9d24" prot="public" virt="non-virtual"><scope>cli_st</scope><name>initialized</name></member>
+      <member refid="structcli__st_1a2720d0c5493080bb0de32a08980aa3be" prot="public" virt="non-virtual"><scope>cli_st</scope><name>num_commands</name></member>
+      <member refid="structcli__st_1a8cddb6553f21346e722581d363532314" prot="public" virt="non-virtual"><scope>cli_st</scope><name>outbuf</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

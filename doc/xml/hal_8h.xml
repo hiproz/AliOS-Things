@@ -1,0 +1,320 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="hal_8h" kind="file" language="C++">
+    <compoundname>hal.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includes refid="base_8h" local="no">hal/base.h</includes>
+    <includes refid="ota_8h" local="no">hal/ota.h</includes>
+    <includes refid="sensor_8h" local="no">hal/sensor.h</includes>
+    <includes refid="trace_8h" local="no">hal/trace.h</includes>
+    <includes refid="wifi_8h" local="no">hal/wifi.h</includes>
+    <includes refid="adc_8h" local="no">hal/soc/adc.h</includes>
+    <includes refid="flash_8h" local="no">hal/soc/flash.h</includes>
+    <includes refid="gpio_8h" local="no">hal/soc/gpio.h</includes>
+    <includes refid="i2c_8h" local="no">hal/soc/i2c.h</includes>
+    <includes refid="pwm_8h" local="no">hal/soc/pwm.h</includes>
+    <includes refid="rng_8h" local="no">hal/soc/rng.h</includes>
+    <includes refid="rtc_8h" local="no">hal/soc/rtc.h</includes>
+    <includes refid="spi_8h" local="no">hal/soc/spi.h</includes>
+    <includes refid="timer_8h" local="no">hal/soc/timer.h</includes>
+    <includes refid="uart_8h" local="no">hal/soc/uart.h</includes>
+    <includes refid="wdg_8h" local="no">hal/soc/wdg.h</includes>
+    <includes refid="sd_8h" local="no">hal/soc/sd.h</includes>
+    <incdepgraph>
+      <node id="222">
+        <label>sys/stat.h</label>
+      </node>
+      <node id="228">
+        <label>aos/yloop.h</label>
+        <link refid="yloop_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="208">
+        <label>stdint.h</label>
+      </node>
+      <node id="237">
+        <label>hal/soc/gpio.h</label>
+        <link refid="gpio_8h"/>
+      </node>
+      <node id="233">
+        <label>hal/trace.h</label>
+        <link refid="trace_8h"/>
+      </node>
+      <node id="221">
+        <label>poll.h</label>
+      </node>
+      <node id="220">
+        <label>fcntl.h</label>
+      </node>
+      <node id="214">
+        <label>aos/debug.h</label>
+        <link refid="debug_8h"/>
+      </node>
+      <node id="236">
+        <label>hal/soc/flash.h</label>
+        <link refid="flash_8h"/>
+      </node>
+      <node id="244">
+        <label>hal/soc/uart.h</label>
+        <link refid="uart_8h"/>
+      </node>
+      <node id="213">
+        <label>aos/cloud.h</label>
+        <link refid="cloud_8h"/>
+      </node>
+      <node id="241">
+        <label>hal/soc/rtc.h</label>
+        <link refid="rtc_8h"/>
+      </node>
+      <node id="225">
+        <label>aos/internal/log_impl.h</label>
+        <link refid="log__impl_8h"/>
+        <childnode refid="215" relation="include">
+        </childnode>
+      </node>
+      <node id="235">
+        <label>hal/soc/adc.h</label>
+        <link refid="adc_8h"/>
+      </node>
+      <node id="234">
+        <label>hal/wifi.h</label>
+        <link refid="wifi_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="209">
+        <label>stddef.h</label>
+      </node>
+      <node id="215">
+        <label>aos/kernel.h</label>
+        <link refid="kernel_8h"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="211">
+        <label>aos/aos.h</label>
+        <link refid="aos_8h"/>
+        <childnode refid="212" relation="include">
+        </childnode>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+        <childnode refid="215" relation="include">
+        </childnode>
+        <childnode refid="217" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>aos/internal/event_type_code.h</label>
+        <link refid="event__type__code_8h"/>
+      </node>
+      <node id="242">
+        <label>hal/soc/spi.h</label>
+        <link refid="spi_8h"/>
+      </node>
+      <node id="210">
+        <label>hal/base.h</label>
+        <link refid="base_8h"/>
+        <childnode refid="211" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>hal/soc/wdg.h</label>
+        <link refid="wdg_8h"/>
+      </node>
+      <node id="216">
+        <label>sys/types.h</label>
+      </node>
+      <node id="212">
+        <label>aos/cli.h</label>
+        <link refid="cli_8h"/>
+      </node>
+      <node id="219">
+        <label>unistd.h</label>
+      </node>
+      <node id="239">
+        <label>hal/soc/pwm.h</label>
+        <link refid="pwm_8h"/>
+      </node>
+      <node id="243">
+        <label>hal/soc/timer.h</label>
+        <link refid="timer_8h"/>
+      </node>
+      <node id="231">
+        <label>hal/ota.h</label>
+        <link refid="ota_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>aos/log.h</label>
+        <link refid="log_8h"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+      </node>
+      <node id="217">
+        <label>aos/kv.h</label>
+        <link refid="kv_8h"/>
+        <childnode refid="218" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>aos/version.h</label>
+        <link refid="version_8h"/>
+      </node>
+      <node id="238">
+        <label>hal/soc/i2c.h</label>
+        <link refid="i2c_8h"/>
+      </node>
+      <node id="218">
+        <label>aos/types.h</label>
+        <link refid="types_8h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
+        <label>/home/work/me/AliOS-Things/include/hal/hal.h</label>
+        <link refid="hal.h"/>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="209" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>hal/sensor.h</label>
+        <link refid="sensor_8h"/>
+      </node>
+      <node id="230">
+        <label>aos/errno.h</label>
+        <link refid="errno_8h"/>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>aos/list.h</label>
+        <link refid="list_8h"/>
+      </node>
+      <node id="240">
+        <label>hal/soc/rng.h</label>
+        <link refid="rng_8h"/>
+      </node>
+      <node id="226">
+        <label>aos/vfs.h</label>
+        <link refid="vfs_8h"/>
+        <childnode refid="216" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>hal/soc/sd.h</label>
+        <link refid="sd_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2015-2017<sp/>Alibaba<sp/>Group<sp/>Holding<sp/>Limited</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>HAL_HAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HAL_HAL_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="base_8h" kindref="compound">hal/base.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="ota_8h" kindref="compound">hal/ota.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sensor_8h" kindref="compound">hal/sensor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="trace_8h" kindref="compound">hal/trace.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wifi_8h" kindref="compound">hal/wifi.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="adc_8h" kindref="compound">hal/soc/adc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="flash_8h" kindref="compound">hal/soc/flash.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="gpio_8h" kindref="compound">hal/soc/gpio.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="i2c_8h" kindref="compound">hal/soc/i2c.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="pwm_8h" kindref="compound">hal/soc/pwm.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rng_8h" kindref="compound">hal/soc/rng.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="rtc_8h" kindref="compound">hal/soc/rtc.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="spi_8h" kindref="compound">hal/soc/spi.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="timer_8h" kindref="compound">hal/soc/timer.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="uart_8h" kindref="compound">hal/soc/uart.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="wdg_8h" kindref="compound">hal/soc/wdg.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="sd_8h" kindref="compound">hal/soc/sd.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>HAL_HAL_H<sp/>*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/work/me/AliOS-Things/include/hal/hal.h"/>
+  </compounddef>
+</doxygen>
