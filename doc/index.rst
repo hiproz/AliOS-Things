@@ -6,7 +6,7 @@
 AliOS-Things 文档
 ===============================
 
-AliOS-Things 是 AliOS 家族旗下面向 IoT 领域的轻量级物联网嵌入式操作系统, 将致力于搭建云端一体化 IoT 基础设施，具备极致性能、极简开发、云端一体、丰富组件、安全防护等关键能力，并支持终端设备连接到阿里云 Link，可广泛应用在智能家居、智慧城市、新出行等领域。
+AliOS Things 是阿里巴巴旗下物联网操作系统。阿里巴巴发布物联网操作系统 AliOS Things 主要目的是让阿里巴巴的物联网技术普惠更多的开发者和用户，助力实现更加美好的物联网时代。
 
 目录
 *******************************
@@ -24,4 +24,10 @@ AliOS-Things 是 AliOS 家族旗下面向 IoT 领域的轻量级物联网嵌入�
 源码
 *******************************
 
-AliOS-Things 采用开源协议许可 Apache 2.0 license，其源代码托管于 GitHub 仓库 `alibaba/AliOS-Things <https://github.com/alibaba/AliOS-Things>`_ 。
+AliOS-Things 是一款开源的操作系统，采用开源协议许可 Apache 2.0 license，其源代码托管于 GitHub 仓库 `alibaba/AliOS-Things <https://github.com/alibaba/AliOS-Things>`_ 。
+
+
+快速入门
+*******************************
+
+现在让我们开始构建第一个 `Hello World Example <app/index.html>`_ 应用，体验 AliOS Things 的极致开发体验。
